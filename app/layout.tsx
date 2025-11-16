@@ -12,7 +12,7 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "ICT HUB PORTAL",
+  title: "ICT HUB",
   description: "manage your subscriptions",
 };
 
