@@ -13,7 +13,7 @@ export default function Home() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    let particles: any[] = [];
+    let particles: Particle[] = [];
     const particleCount = 70;
     let width: number, height: number;
 
