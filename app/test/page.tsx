@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -106,34 +107,32 @@ export default function Home() {
               <h2 className="text-xl md:text-2xl lg:text-3xl font-light mt-4 md:mt-6 opacity-80">
                 Sign up and Manage your subscription.
               </h2>
-
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="mt-10 md:mt-12 group flex items-center justify-center space-x-4 p-3 md:p-4 rounded-xl shadow-2xl transition-all duration-300 transform bg-[--color-button-dark] hover:bg-[#34375b] focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-offset-[--color-primary-bg] focus:ring-[--color-button-accent]"
               >
                 <span className="text-lg md:text-xl font-semibold">
                   Get Superhuman
                 </span>
                 <span className="p-2 md:p-3 rounded-lg backdrop-blur-md bg-white/10 border border-white/20 shadow-lg group-hover:bg-white/20 transition-all duration-300">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="18"
-    fill="none"
-    viewBox="0 0 20 18"
-    className="text-white"
-  >
-    <path
-      d="M10.833 3.667L16.5 9l-5.667 5.333M16.5 9H3.5"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-</span>
-
-              </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="18"
+                    fill="none"
+                    viewBox="0 0 20 18"
+                    className="text-white"
+                  >
+                    <path
+                      d="M10.833 3.667L16.5 9l-5.667 5.333M16.5 9H3.5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
             </div>
           </div>
 
