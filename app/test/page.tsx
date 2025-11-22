@@ -3,6 +3,9 @@ import { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
+
+
+
 export default function Home() {
   useEffect(() => {
     // --- Canvas Firefly effect ---
@@ -10,8 +13,9 @@ export default function Home() {
       "firefly-canvas"
     ) as HTMLCanvasElement;
     if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    const ctxRaw = canvas.getContext("2d");
+    if (!ctxRaw) return;
+    const ctx = ctxRaw as CanvasRenderingContext2D;
 
     let particles: Particle[] = [];
     const particleCount = 70;
@@ -83,10 +87,10 @@ export default function Home() {
     <>
       <Head>
         <title>Become Superhuman</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-          rel="stylesheet"
-        />
+        <meta name="description" content="Manage your subscriptions" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+        
       </Head>
 
       <canvas
